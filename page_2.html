@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Milestone 1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Milestone 2</h1>
+
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+												<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="/images/camera_gif_cropped.gif" alt="" /></span>
+								<a href="index.html" class="button">Home</a>
+
+								<br>
+								<br>
+								<br>
+
+								<h2>Week 2: Milestone 2</h2>
+								<iframe class="video2" src="https://youtube.com/embed/A7ND_IXae3w"></iframe>
+								
+								<p>
+									For this week, we mainly focused on solidifying our identity and mechanics of our game. We had an identity crisis of how our game would actually make educating people on dinosaurs fun, so we had plenty of discussions regarding that. Along with that, we began implementing more core features as well. Lastly, we’ve received a lot of feedback from a vast amount of people.
+								<p>
+								<p><b>Improvements from last week</b></p>
+									Last week, we implemented some of our first core ideas/mechanics. To start off, one of our ideas was using smooth movement instead of teleportation. After feedback from different people, we have decided to strike a middle ground by implementing both, giving the option for the user to choose between the two instead. However, there is a big issue with the default teleportation system. The map that we imported is one huge static mesh essentially where we can’t edit the individual objects. For some reason, the default teleportation projectile doesn’t work too well with the map, so we are trying out alternatives like just teleporting the player a certain distance in a direction, but that has its own issues that we will look more into. Also, we improved the smooth movement so that the player can go all directions instead of only the forward direction with the controller. Furthermore, we planned to make the view of the player higher to reduce sickness.
+								</p>
+								<p>
+									Along with that, we did more research on our dinosaurs. We have a few dinosaurs we have finalized, but there are still a few more we need to pick so we can add their respective foods and models.
+								</p>
+								<p>
+									We also updated our name as well as our site. We wanted our name to reflect the idea of a dinosaur game with photographs, so we decided to go with DinoSnap for now. There could be a chance we change it if there is a better idea, but we will stick with this title for now.
+								</p>
+								<p>
+									The website also changed from last week. We wanted to make our website more dinosaur-like, so we added a gif to the homepage.
+								</p>
+								<p>
+									There are two things that we wanted to bring up from last week as we thought we might not have addressed it clearly. Firstly, in terms of the financial stability, we’ve discussed the overall cost of the game and believed that it could be sold for about $5 to $10. We definitely don’t believe we should sell it at a high price considering many assets are not original. Along with that, by the time we “finish” our product, the game wouldn’t be that long. We are trying to make the game replayable though.
+								</p>
+								<p>
+									There are two things that we wanted to bring up from last week as we thought we might not have addressed it clearly. Firstly, in terms of the financial stability, we’ve discussed the overall cost of the game and believed that it could be sold for about $5 to $10. We definitely don’t believe we should sell it at a high price considering many assets are not original. Along with that, by the time we “finish” our product, the game wouldn’t be that long. We are trying to make the game replayable though.
+								</p>
+								<p>
+									The second thing that we wanted to address was social impact. Like we mentioned before, our game aims to educate our players on different dinosaurs through our photography system. We aim to assign different missions to the player so that they can indirectly learn facts about the dinosaurs whilst also having fun taking pictures. For example, one mission could be that the player would need to take a picture of a dinosaur eating. In order to do so, the player would need to find the wide variety of food scattered around. Along with that, the player would then need to test out what kind of food a specific dinosaur eats. The reason why our project matters is because our product introduces a fun and creative way for players to be immersed in a world of dinosaurs while also learning about them as well. It provides a unique experience that is different from any books, documentaries, and museums. With our product, we want to contribute to the idea of learning through VR. 
+								</p>		
+								
+								<p><b>New implementations</b></p>
+								<p>
+									To provide motivation for the player, we added a background story to the game. The player is a scientist in the modern time. A time traveling machine suddenly appeared and the player has a mission to take photos of dinosaurs in different eras to get first-handed information for the research. Most likely, we will have a narrator for the story. The player can choose between 2-3 eras when dinosaurs live, which will be done by separating the map that we have into 2-3 areas. The player needs to interact with different types of dinosaurs in that era to get a variety of photos that will indirectly teach them about dinosaurs(more on this later).
+								</p>
+								<p>
+									To move on to new add-ons, we decided to add a belt to the player, where the player can hold things including a camera and photo album, booklet, and inventory system.
+								</p>
+								<p>
+									The camera will be the main aspect of our game as the player will be assigned tasks relating to taking pictures. The camera isn’t entirely done since detecting which actors are in the frame is extremely difficult. We originally planned on using the “WasRecentlyRendered” node, but we are using a scene capture which sadly doesn’t work with that node. We also thought about sending a line trace to each dinosaur to see if they were visible, but in order to do this, we would have to send out multiple line traces to a specific dinosaur. Lastly, the way that we plan on implementing it is similar to how enemies in some games have a field of view by using Pawn sensing. Essentially, our camera will have a cone that will detect if there is a dinosaur in front of it. This part is still heavily work in progress since as of right now, the camera isn’t detecting the dinosaurs. To pair along with the camera, we will also have a photo album that shows the pictures you have taken
+								</p>
+								<p>
+									Another thing we plan on implementing is a dinosaur booklet. This booklet will tell you dinosaur facts about a dinosaur only if you have taken a picture of that dinosaur. This booklet is a way for letting us cover any facts that we might not be able to cover in the camera system. This is somewhat done, but we need to rethink the ease of use of this feature.
+								</p>
+								<p>
+									Lastly, we are planning to have an inventory system. Right now, we have something very similar to Half Life Alyx’s inventory system where you can quickly pull out items through a menu wheel. Along with this, you would have a little bag where if you put objects near the bag, it will be stored in your inventory. This system is not done yet but we chose not to finish this just yet since we might swap to another inventory system. We were thinking about an inventory where you can grab behind your character and a bag will appear. This bag will allow you to place items into it and have it show up but floating. The player can essentially place whatever item they want without us having to track it in a database. 
+								</p>
+								<p>
+									Currently, we have implemented all the features of the dinosaurs. Including the random movement, the feeding system, the riding system, and the basic information panel. Next week, we will place the dinosaurs into the correct habitats and add the interactions to all dinosaurs. We will focus more on the whole frame of the project including the plot, the scenery and the UI parts.
+								</p>																	
+										
+								<p><b>Feedback</b></p>
+								<p>
+									We received feedback from our first playtest and from the XR faculty members. From our playtest, they recommended a few visual changes as well giving us the whole idea of taking pictures. They also had a lot of positive feedback regarding our idea as well. From the faculty members, the feedback that we received was the reason why we had to think about the education part of the project more carefully. We were going down the wrong path before, but with the feedback, we feel like we are slowly finding the right one. 
+								</p>
+								<p>
+									Lastly, we interviewed Jeffrey A. Wilson Mantilla. He is a professor in the department of Earth & Environmental Sciences, as well as a Curator of the Museum of Paleontology. He provided a lot of feedback on our overall concept and mechanics. Two things he wanted to stress is the fact that dinosaurs are not extinct in the modern world, and that the age of the dinosaurs was actually a short time in comparison to the life of the entire world. He also gave us some ideas relating to the story of our game and how everything connects with each other. Overall, we are going to do our best to contextualize dinosaurs as much as possible in our product. 
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- <section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section> -->
+						<p class="copyright">&copy; EECS 498 - Group 6. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
